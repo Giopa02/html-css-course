@@ -1,0 +1,93 @@
+
+
+:root {
+    --primary-color: rgb(196, 128, 196);
+    --secondary-color: hsla(300, 49%, 61%, 0.81);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-container {
+    background-color: rgb(196, 128, 196);
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+#menu-container #menu {
+    background-color: hsla(300, 49%, 61%, 0.81);
+    list-style-type: none;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#menu-container #menu .menu-item {
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#menu-container #menu .menu-item li {
+    color: beige;
+}
+
+#bienvenue-accueil {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: underline;
+}
+
+main {
+    flex: 100vh;
+}
+
+.image-accueil{
+    display: flex;
+    width: 70vh;
+    height: auto;
+    margin: auto;
+}
+
+#paragraphe-presentation{
+    font-size: 20px
+}
+
+#paragraphe-soins{
+    font-size: 20px
+}
+
+#titre-importance-soins{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: underline;
+}
+
+#paragraphe-importance-soins{
+    font-size: 20px
+}
+
+.footer-container {
+    height: 70px;
+    background-color: blueviolet;
+}
+
+.footer-container #bas-de-page {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-container #bas-de-page .menu-item {
+    text-decoration: none;
+    text-align:center;
+    font-size: 25px;
+} 
