@@ -51,6 +51,8 @@ main {
     flex: 100vh;
 }
 
+
+
 .image-accueil{
     display: flex;
     width: 70vh;
@@ -58,22 +60,28 @@ main {
     margin: auto;
 }
 
-#paragraphe-presentation{
-    font-size: 20px
-}
-
-#paragraphe-soins{
-    font-size: 20px
-}
-
-#titre-importance-soins{
+h2 {
     display: flex;
     justify-content: space-around;
     text-decoration: underline;
 }
 
-#paragraphe-importance-soins{
-    font-size: 20px
+
+.spaced-paragraph{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+ol {
+    list-style-type: disc; /* Définit le style des puces (options : circle, square, none, etc.) */
+    padding-left: 70px; /* Indentation de la liste */
+    margin: 20px 0; /* Espacement autour de la liste */
+}
+
+li {
+    color: #333; /* Couleur du texte des éléments */
+    font-size: 20px; /* Taille de la police */
+    margin-bottom: 10px; /* Espacement entre chaque élément */
 }
 
 .footer-container {
@@ -88,6 +96,6 @@ main {
 
 .footer-container #bas-de-page .menu-item {
     text-decoration: none;
-    text-align:center;
+    text-align: center;
     font-size: 25px;
 } 
