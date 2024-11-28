@@ -1,8 +1,6 @@
-
-
 :root {
-    --primary-color: rgb(196, 128, 196);
-    --secondary-color: hsla(300, 49%, 61%, 0.81);
+    --primary-color: #FBF0E9;
+    --secondary-color: #FBF0E9;
 }
 
 * {
@@ -16,14 +14,23 @@ body {
 }
 
 #menu-container {
-    background-color: rgb(196, 128, 196);
+    background-color: #FBF0E9;
     display: flex;
     justify-content: center;
     height: 150px;
 }
 
+#menu-container #logo_babyspa{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left:20px;
+    margin-top: -10px;
+}
+
+
 #menu-container #menu {
-    background-color: hsla(300, 49%, 61%, 0.81);
+    background-color: #FBF0E9;
     list-style-type: none;
     width: 70%;
     display: flex;
@@ -38,55 +45,156 @@ body {
 }
 
 #menu-container #menu .menu-item li {
-    color: beige;
+    color: hsla(300, 49%, 61%, 0.81);
+    font-size: 30px;
 }
 
-#bienvenue-accueil {
-    display: flex;
-    justify-content: space-around;
-    text-decoration: underline;
-}
 
 main {
     flex: 100vh;
 }
 
+p{
+    padding-inline: 25px;
+}
 
+.flex-container {
+    display: flex; /* Active le mode Flexbox */
+    align-items: center; /* Aligne verticalement l'image et le texte */
+    gap: 20px; /* Ajoute un espace entre l'image et le texte */
+}
 
-.image-accueil{
-    display: flex;
-    width: 70vh;
-    height: auto;
-    margin: auto;
+.flex-container img {
+    width: 400px; /* Largeur de l'image */
+    height: auto; /* Garde les proportions */
+}
+
+.flex-container p {
+    font-size: 20px;
+    color: #333;
 }
 
 h2 {
+    height: 60px; /* la taille que la bande va prendre*/
+    background-size: cover;
+    background-position: center;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBF0E9;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 40px; /* la distance entre la bande et ce qui se trouve au dessus */
+    margin-bottom: 10px; /* la distance entre la bande et ce qui se trouve en dessous */
+    font-family: 'Cabin', sans-serif;
+}
+
+/* Conteneur des cartes */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
+    gap: 20px; /* Espacement entre les cartes */
+    padding: 20px;
+}
+
+
+
+/* Style des cartes */
+.card {
+    background-color: #f9f9f9; /* Fond de la carte */
+    border: 3px solid #ddd; /* Bordure fine */
+    border-radius: 8px; /* Coins arrondis */
+    text-align: center; /* Centrer le texte */
+    padding: 10px; /* Espacement interne */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Images des cartes */
+.card img {
+    width: 100%; /* L'image prend toute la largeur disponible */
+    height: auto; /* Garde les proportions */
+    border-radius: 8px 8px 0 0; /* Coins arrondis en haut */
+}
+
+/* Texte des cartes */
+.card p {
+    margin-top: 15px;
+    font-size: 1,1rem;
+    color: #333;
+    font-family: 'Crimson Text', sans-serif;
+}
+
+.card h1 {
+    margin-top: 15px;
+    font-size: 30px;
+    color: #333;
+    font-family: "Jaro", sans-serif;
     text-decoration: underline;
 }
 
-
 .spaced-paragraph{
-    margin-bottom: 30px;
     font-size: 20px;
+    font-family: 'Crimson Text', sans-serif;
 }
 
-ol {
-    list-style-type: disc; /* Définit le style des puces (options : circle, square, none, etc.) */
-    padding-left: 70px; /* Indentation de la liste */
-    margin: 20px 0; /* Espacement autour de la liste */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur petits écrans */
+    }
 }
 
-li {
-    color: #333; /* Couleur du texte des éléments */
-    font-size: 20px; /* Taille de la police */
-    margin-bottom: 10px; /* Espacement entre chaque élément */
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr; /* 1 colonne sur très petits écrans */
+    }
 }
+
+.card:hover{
+    transform: translateY(-10px) scale(1.05); /* Déplace légèrement le bloc vers le haut et l'agrandit */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
+    transition: transform 1s ease-in-out, box-shadow 1s ease-in-out; /*Permet de rendre l'animation plus lente ou rapide*/
+}
+
+
+
+.invitation-galerie {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+
+.invitation-galerie p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-galerie {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(148, 83, 232);
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+    font-size: 3vh;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-galerie:hover {
+    background-color: rgb(122, 67, 195);
+}
+
+
+
+
+
+
 
 .footer-container {
     height: 70px;
-    background-color: blueviolet;
+    background-color: #FBF0E9;
 }
 
 .footer-container #bas-de-page {
@@ -98,4 +206,5 @@ li {
     text-decoration: none;
     text-align: center;
     font-size: 25px;
+    color: hsla(300, 49%, 61%, 0.81);
 } 

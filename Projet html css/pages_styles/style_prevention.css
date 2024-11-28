@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #FBF0E9;
+    --secondary-color: #FBF0E9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-container {
+    background-color: #FBF0E9;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+#menu-container #logo_babyspa{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left:20px;
+    margin-top: -10px;
+}
+
+#menu-container #menu {
+    background-color: #FBF0E9;
+    list-style-type: none;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#menu-container #menu .menu-item {
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#menu-container #menu .menu-item li {
+    color: hsla(300, 49%, 61%, 0.81);
+    font-size: 30px;
+}
+
+
+main {
+    flex: 100vh;
+}
+
+
+h2 {
+    height: 60px; /* la taille que la bande va prendre*/
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBF0E9;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 40px; /* la distance entre la bande et ce qui se trouve au dessus */
+    margin-bottom: 10px; /* la distance entre la bande et ce qui se trouve en dessous */
+    font-family: 'Cabin', sans-serif;
+}
+
+.prevention-container p{
+    padding-inline: 70px;
+}
+
+.prevention-container h1 {
+    padding-inline: 25px;
+    padding-block: 30px;
+}
+
+
+.reassure-paragraph p{
+    padding: 25px;
+}
+
+
+
+
+
+.footer-container {
+    height: 70px;
+    background-color: #FBF0E9;
+}
+
+.footer-container #bas-de-page {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-container #bas-de-page .menu-item {
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    color: hsla(300, 49%, 61%, 0.81);
+} 

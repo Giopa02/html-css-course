@@ -2,55 +2,121 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Page d'accueil</title>
+        <title>Trouve Ton Baby Spa | Accueil</title>
         <link rel="stylesheet" href="../pages_styles/style_index.css">
-        <script src="../pages_styles/script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <style>
-            body { background-color: #fff2e6; }
+            body { background-color: #FBFBFB; }
+
+            .banner {
+            height: 300px;
+            background-image: url("../images/image_bebe_accueil.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                height: 200px;
+            }
+
+            .banner h1 {
+                font-size: 1.8rem;
+            }
+
+            .banner p {
+                font-size: 1rem;
+            }
+        }
+
+
         </style>
     </head>
+
     <body>
         <nav id="menu-container">
+            <a href="../pages/index.html" class="menu-item">
+                <img src="../images/logo.png" alt="logo Baby Spa" id="logo_babyspa">
+            </a>
             <ul id="menu">
                 <a href="./index.html" class="menu-item"><li>Accueil</li></a>
-                <a href="./p1.html" class="menu-item"><li>Forfaits</li></a>
-                <a href="./page_photos.html" class="menu-item"><li>Réservations</li></a>
-                <a href="./p3.html" class="menu-item"><li>Contact</li></a>
+                <a href="../pages/forfaits.html" class="menu-item"><li>Forfaits</li></a>
+                <a href="../pages/reservation.html" class="menu-item"><li>Réservations</li></a>
+                <a href="../pages/prevention.html" class="menu-item"><li>Préventions</li></a>
+                <a href="../pages/galerie.html" class="menu-item"><li>Galerie</li></a>
             </ul>
         </nav>
 
-        <main class="Accueil">
-            
-        <h1>
-                Bienvenue chez Trouve ton Baby Spa
-        </h1>
-            
-        <img src="../images/image_bebe_accueil.jpg" alt="Une image de bébé qui flotte" class="image-accueil">
-            
+<!--BANNIÈRRE-->
+
+
+        <div class="banner">
+            <h1>Bienvenue chez trouve ton Baby Spa !</h1>
+            <p>Découvrez nos services et offres exclusives</p>
+        </div>
+
+
+        <main class="Accueil">   
 
 <!-- Un paragraphe de présentation-->
 
         <h2> 
             C'est quoi un Baby Spa ? 
         </h2>
-        
-        <div class="spaced-paragraph">
-                <p>
-                    Un baby spa est un espace spécialement conçu pour offrir aux nourrissons des soins de bien-être doux 
-                    et adaptés à leurs besoins, dans un cadre apaisant et sécurisé. Le concept repose sur l’utilisation 
-                    de l’eau et du massage pour créer une expérience relaxante, inspirée des bienfaits de la thalassothérapie 
-                    et de l’hydrothérapie. Au sein d’un baby spa, les bébés bénéficient de séances de flottement en eau 
-                    chaude, souvent équipés de flotteurs spécialement conçus pour soutenir leur tête, leur permettant de 
-                    se mouvoir librement et en toute sécurité. 
-                    <br><br>
-                    Cette immersion dans l’eau aide à détendre leurs muscles, 
-                    soulager les tensions et favoriser leur motricité. Après le bain, les séances de massage complètent 
-                    le soin en apportant détente et stimulation sensorielle. En plus de ces bienfaits physiques, le baby 
-                    spa offre aux parents un moment de complicité unique avec leur enfant, contribuant à renforcer le lien 
-                    affectif et à créer des souvenirs inoubliables dans une atmosphère de calme et de bien-être.                
-                </p>
-        </div>
+
+        <div class="flex-container">
+            <img id="image_baby_spa" src="../images/image_baby_spa.jpg" alt="Image descriptive">
+                <div>
+                    <p>
+                        Un baby spa est un espace spécialement conçu pour offrir aux nourrissons des soins de bien-être doux 
+                        et adaptés à leurs besoins, dans un cadre apaisant et sécurisé. Le concept repose sur l’utilisation 
+                        de l’eau et du massage pour créer une expérience relaxante, inspirée des bienfaits de la thalassothérapie 
+                        et de l’hydrothérapie. Au sein d’un baby spa, les bébés bénéficient de séances de flottement en eau 
+                        chaude, souvent équipés de flotteurs spécialement conçus pour soutenir leur tête, leur permettant de 
+                        se mouvoir librement et en toute sécurité. 
+                    </p>
+                </div>
                 
+                <div>
+                    <p>
+                        Cette immersion dans l’eau aide à détendre leurs muscles, 
+                        soulager les tensions et favoriser leur motricité. Après le bain, les séances de massage complètent 
+                        le soin en apportant détente et stimulation sensorielle. En plus de ces bienfaits physiques, le baby 
+                        spa offre aux parents un moment de complicité unique avec leur enfant, contribuant à renforcer le lien 
+                        affectif et à créer des souvenirs inoubliables dans une atmosphère de calme et de bien-être. 
+                    </p>
+                </div>
+
+            </div>
+            <style>
+                .flex-container p{
+                    font-family: 'Crimson Text', sans-serif;
+                }
+
+                #image_baby_spa{
+                    padding: 15px;
+                }
+            </style>
+        </div>
             
 
 <!-- Explication des différents soins pour bébé -->
@@ -60,31 +126,98 @@
         </h2>
 
         <div class="spaced-paragraph">
-                <p>
-                    Dans un baby spa, plusieurs types de 
-                    soins peuvent être proposés pour répondre aux besoins 
-                    spécifiques des nourrissons et favoriser leur bien-être global : 
-                </p>
+            <p>
+                Dans un baby spa, plusieurs types de 
+                soins peuvent être proposés pour répondre aux besoins 
+                spécifiques des nourrissons et favoriser leur bien-être global : 
+            </p>
+                
 
 <!--La liste des soins -->
 
-            <ol>
-                <li> <b>Hydrothérapie pour bébés : </b> Une séance de flottement en eau chaude, 
-                    où le bébé, équipé d’un flotteur spécialement adapté, peut bouger 
-                    librement. Cette pratique aide à renforcer les muscles, améliore la 
-                    coordination et procure un sentiment de relaxation en réduisant les 
-                    tensions corporelles.
-                </li>
-                <li>element 1</li>
-                <li>element 2</li>
-                <li>element 3</li>
-                <li>element 4</li>
-                <li>element 5</li>
 
-            </ol>
-        
-        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="../images/hydro_bebe.jpg" alt="Image Hydrothérapie">
+                <h1> HYDROTHÉRAPIE</h1>
+                <p>L’hydrothérapie pour bébés est une pratique douce 
+                    qui utilise l’eau pour favoriser le bien-être et 
+                    le développement des tout-petits. Dans un environnement 
+                    sécurisé, les bébés flottent librement, ce qui stimule leur 
+                    motricité, renforce leur musculature et améliore leur coordination. 
+                    Ce moment d’apaisement contribue également à réduire le 
+                    stress, à favoriser un meilleur sommeil et à renforcer le 
+                    lien parent-enfant. L’hydrothérapie est adaptée dès les 
+                    premières semaines de vie et offre une expérience 
+                    relaxante tout en soutenant le développement global du bébé.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="../images/massage_bebe.jpeg" alt="Image massage">
+                <h1> MASSAGES </h1>
+                <p>Les massages pour bébé sont des gestes 
+                    doux et enveloppants qui apaisent et 
+                    réconfortent. Ils favorisent la relaxation, 
+                    stimulent la circulation sanguine et 
+                    renforcent le lien affectif entre le parent 
+                    et l’enfant. Ces moments privilégiés aident aussi 
+                    à soulager certains inconforts, comme les coliques ou 
+                    les tensions musculaires, tout en contribuant au bien-être global du bébé.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="../images/stimulation_senso_bebe.png" alt="Image stimulation">
+                <h1> STIMULATION SENSORIELLE </h1>
+                <p>La stimulation sensorielle aide les bébés à explorer le 
+                    monde qui les entoure grâce à des expériences adaptées à 
+                    leur âge. Par des sons, des textures, des lumières ou des 
+                    odeurs douces, ces activités encouragent le développement des sens, 
+                    améliorent la concentration et éveillent leur curiosité naturelle. 
+                    Cela joue un rôle essentiel dans leur croissance cognitive et émotionnelle.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="../images/bain_lait_bebe.jpg" alt="Image bain lait">
+                <h1> BAIN DE LAIT AUX PLANTES </h1>
+                <p>Les bains de lait aux plantes offrent une expérience apaisante 
+                    et nourrissante pour la peau délicate des bébés. Enrichis de 
+                    plantes aux propriétés relaxantes et hydratantes, comme la camomille 
+                    ou la lavande, ces bains favorisent le calme, soulagent les 
+                    irritations cutanées et créent un moment unique de détente pour 
+                    le bébé et ses parents.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="../images/atelier_relax.jpg" alt="Image atelier relax">
+                <h1> ATELIER RELAXATION </h1>
+                <p>Les ateliers de relaxation sont des moments précieux pour renforcer 
+                    le lien entre bébé et parent. Par des exercices simples, comme des 
+                    respirations guidées, des étirements doux ou des bercements apaisants, 
+                    ces séances aident à réduire le stress, à mieux comprendre les besoins 
+                    du bébé et à instaurer une ambiance de calme et de sérénité dans le quotidien familial.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="../images/consultation_bebe.jpg" alt="Image consultation">
+                <h1> CONSULTATION BIEN-ÊTRE </h1>
+                <p>La consultation bien-être est un moment dédié pour accompagner les 
+                    parents et leur bébé dans une approche personnalisée de détente et 
+                    de soins. Elle permet d’identifier les besoins spécifiques de l’enfant 
+                    et d’offrir des conseils adaptés sur des pratiques comme le massage, 
+                    l’hydrothérapie ou la relaxation. Cet échange bienveillant vise à 
+                    renforcer le bien-être physique et émotionnel du bébé tout en apportant 
+                    aux parents des outils pour mieux répondre à ses besoins.
+                </p>
+            </div>
             
+        </div>
+        
+
 <!-- Explication de l'importance des soins -->
 
         <h2>
@@ -92,34 +225,50 @@
         </h2>
 
         <div class="spaced-paragraph">
-            <p>
+            <div>
+                <p>
                 Les soins pour bébés dans un baby spa offrent des bienfaits essentiels pour le bien-être 
                 et le développement des tout-petits. En combinant des techniques de massage doux et d’hydrothérapie,
                 ces séances stimulent le développement musculaire et moteur des nourrissons, favorisant ainsi leur 
                 coordination et leur motricité. L’eau chaude et enveloppante apaise les tensions corporelles, aide à 
                 réduire les coliques et les inconforts digestifs, et contribue à un meilleur sommeil, un élément crucial 
                 pour le développement cognitif et physique de bébé. 
-                <br><br>
+                </p>
+            </div>
+            
+            <div>
+                <p>
                 Par ailleurs, ces moments privilégiés créent un 
                 lien apaisant entre le bébé et ses parents, renforçant la relation affective et la confiance mutuelle. 
                 L’ambiance calme et sécurisante du baby spa, couplée aux gestes professionnels de praticiens formés, offre aux bébés 
                 une expérience unique et bénéfique, leur permettant de grandir en pleine sérénité tout en renforçant 
                 leur bien-être global.               
-            </p>
-        
+                </p>
+            </div>
         </div>
             
-            
-                
-            
 
-            Ceci est un main
+<!-- Invitation vers la galerie -->
+
+        <h2>Découvrez nos moments uniques !</h2>
+
+            <section class="invitation-galerie">
+                <p>
+                    Plongez dans l’univers chaleureux de notre Baby Spa 
+                        en visitant notre galerie. Retrouvez des images captivantes 
+                        de nos séances, des sourires d’enfants heureux, et des instants 
+                        de complicité inoubliables entre parents et bébés. Laissez-vous 
+                        inspirer par ces moments de bien-être et imaginez votre propre 
+                        expérience avec nous. Cliquez ci-dessous pour en voir plus !
+                </p>
+                <a href="../pages/galerie.html" class="btn-galerie">Galerie</a>
+            </section>   
+
 
         </main>
 
         <footer class="footer-container">
             <ul id="bas-de-page">
-                <a href="./index.html" class="menu-item"><li>Prendre Rdv</li></a>
                 <a href="./p1.html" class="menu-item"><li>Nos centres</li></a>
                 <a href="./p2.html" class="menu-item"><li>Contact</li></a>
             </ul>
