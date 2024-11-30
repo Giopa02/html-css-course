@@ -11,7 +11,72 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Raleway', sans-serif;
 }
+
+main {
+    flex: 100vh;
+}
+
+p{
+    padding: 25px;
+    font-size: 20px;
+}
+
+h2 {
+    height: 60px; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBF0E9;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 40px; 
+    margin-bottom: 10px; 
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+}
+
+
+
+/* ---------LOGO-----------*/
+
+.image-hover {
+    position: absolute;
+    left: 20px; ;
+    width: 150px; /* Ajuste la largeur selon mes besoins */
+    height: 150px;
+    margin-top: -10px; /* Ajuste la hauteur selon mes besoins */
+    overflow: hidden;
+}
+
+.image-hover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.image-hover .hover-logo {
+    opacity: 0; /* L'image de survol est invisible par défaut */
+}
+
+.image-hover:hover .hover-logo {
+    opacity: 1; /* L'image de survol apparaît au passage de la souris */
+}
+
+.image-hover:hover .base-logo {
+    opacity: 0; /* L'image de base devient invisible au passage de la souris */
+}
+
+
+
+/* ---------MENU HEADER-----------*/
 
 #menu-container {
     background-color: #FBF0E9;
@@ -49,52 +114,97 @@ body {
 }
 
 
-main {
-    flex: 100vh;
+/* ---------VIDEO CONTAINER-----------*/
+
+
+
+/* Conteneur de la vidéo */
+.video-container {
+    display: flex; 
+    justify-content: center; 
+    background-color: #f8f9fa; 
+    margin-top: 40px; 
+    margin-bottom: 20px;
 }
 
-p{
-    padding: 25px;
-}
-
-h2 {
-    height: 60px; /* la taille que la bande va prendre*/
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #FBF0E9;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    margin-top: 40px; /* la distance entre la bande et ce qui se trouve au dessus */
-    margin-bottom: 10px; /* la distance entre la bande et ce qui se trouve en dessous */
-    font-family: 'Cabin', sans-serif;
+.custom-video {
+    width: 60%; /* Ajuste la largeur de la vidéo */
+    max-width: 800px; /* Définit une largeur maximale */
+    aspect-ratio: 16 / 9; /* Maintient le ratio 16:9 */
+    border: 5px solid #e4bae9; /* Bordure décorative */
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
 
+/* ---------GALLERY CONTAINER-----------*/
 
 
+.gallery-container {
+    padding: 20px; /* Ajoute un espacement autour de la galerie */
+}
+
+/* Conteneur des images */
+.gallery {
+    display: flex; /* Active Flexbox */
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne */
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 25px; /* Ajoute de l'espacement entre les images */
+}
+
+/* Style des images */
+.gallery img {
+    width: 450px; /* Définit une largeur fixe pour les images */
+    height: auto; /* Maintient le ratio (proportions) des images */
+    object-fit: cover; /* S'assure que l'image s'ajuste sans déformation */
+    border: 2px solid #FBF0E9; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
+}
+
+.gallery img:hover {
+    transform: scale(1.1); 
+    border-color: #e4bae9; 
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        margin: auto; /* Centre les images dans chaque ligne */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        margin: auto; /* Centre les images verticalement et horizontalement */
+    }
+}
 
 
-
-
-
+/* ---------FOOTER-----------*/
 
 .footer-container {
-    height: 70px;
+    display: flex;
+    justify-content: center;
+    height: 130px;
     background-color: #FBF0E9;
 }
 
 .footer-container #bas-de-page {
+    width: 70%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    
 }
 
-.footer-container #bas-de-page .menu-item {
-    text-decoration: none;
-    text-align: center;
-    font-size: 25px;
-    color: hsla(300, 49%, 61%, 0.81);
+.footer-container #bas-de-page #item-twitter {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+} 
+
+.footer-container #bas-de-page #item-insta {
+    width: 120px;
+    height: 120px;
 } 

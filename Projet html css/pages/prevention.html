@@ -4,14 +4,18 @@
         <meta charset="utf-8">
         <title>Trouve Ton Baby Spa | Préventions </title>
         <link rel="stylesheet" href="../pages_styles/style_prevention.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <style>
             body { background-color: #FBFBFB; }
 
             .banner {
             height: 300px;
-            background-image: url("../images/image_bebe_accueil.jpg");
+            background-image: url("../images/pleurs-bebe.jpg.avif");
             background-size: cover;
-            background-position: center;
+            background-position:center;
+            top: 20px; 
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -51,7 +55,10 @@
     <body>
         <nav id="menu-container">
             <a href="../pages/index.html" class="menu-item">
-                <img src="../images/logo.png" alt="logo Baby Spa" id="logo_babyspa">
+                <div class="image-hover">
+                    <img src="../images/logo.png" alt="logo de base" class="base-logo">
+                    <img src="../images/logo_hover.png" alt="logo au survol" class="hover-logo">
+                </div>
             </a>
             <ul id="menu">
                 <a href="./index.html" class="menu-item"><li>Accueil</li></a>
@@ -65,114 +72,101 @@
 
 <!--BANNIÈRRE-->
 
-
         <div class="banner">
             <h1>Nos préventions !</h1>
             <p>Les signes à surveiller</p>
         </div>
 
-    
+<!--MAIN-->
+        <main>
 
+            <h2> Nos 5 préventions</h2>
 
-
-    <main>
-
-        <p> c'est la page des préventions </p>
-<!-- c'est le main. modifier le css.-->
-
-        <div class="prevention-container"> 
-            <h1>
-                1. Surveillance constante lors des activités aquatiques
-            </h1>
-            <p>
-                Lors des séances d’hydrothérapie ou tout autre activité 
-                en eau, veillez à garder un œil constant sur votre bébé. 
-                Même dans un environnement sécurisé, la présence et l’attention 
-                des parents restent essentielles pour assurer sa sécurité et son confort.            
-            </p>
-        </div>
-
-
-        <div class="prevention-container"> 
-            <h1>
-                2. Respect des consignes d’hygiène
-            </h1>
-            <p>
-                Pour garantir un environnement sain, assurez-vous que votre 
-                bébé ait pris un bain préalable avant les activités au Baby 
-                Spa. Vérifiez également qu’il ne présente aucun signe de maladie 
-                contagieuse pour protéger les autres enfants.            
-            </p>
-        </div>
-        
-        
-        <div class="prevention-container"> 
-            <h1>
-                3. Évitez les séances en cas de fatigue ou de maladie
-            </h1>
-            <p>
-                Si votre bébé est malade, présente des signes de fatigue extrême 
-                ou se remet d’une vaccination récente, il est conseillé de reporter 
-                la séance. Ces moments doivent avant tout être agréables et bénéfiques 
-                pour votre enfant.            
-            </p>
-        </div>
-        
-        
-        <div class="prevention-container"> 
-            <h1>
-                4. Informez-vous sur les besoins de votre bébé
-            </h1>
-            <p>
-                Avant d’essayer une nouvelle activité comme le massage ou les bains de lait, 
-                renseignez-vous sur les besoins spécifiques de votre bébé. Certaines pratiques 
-                pourraient ne pas convenir à tous les enfants en fonction de leur âge ou de leur santé.            
-            </p>
-        </div>
-        
-        
-        <div class="prevention-container"> 
-            <h1>
-                5. Priorisez une hydratation et une alimentation adaptées
-            </h1>
-            <p>
-                Assurez-vous que votre bébé est bien hydraté et qu’il a mangé suffisamment 
-                avant une séance, mais évitez les repas trop copieux juste avant. Cela contribue 
-                à son bien-être et prévient tout inconfort pendant les activités.            
-            </p>
-        </div>
-
-        
-
-        <div class="reassure-paragraph">
-            <h2> 
-                Votre sérénité, notre priorité
-            </h2>
+            <div class="prevention-container"> 
+                <h1>
+                    1. Surveillance constante lors des activités aquatiques
+                </h1>
                 <p>
-                    Chez Trouve Ton Baby Spa, nous comprenons l’importance de la sécurité 
-                    et du bien-être de votre bébé. Toutes nos activités et soins sont encadrés 
-                    par des professionnels formés et expérimentés, dans un environnement spécialement 
-                    conçu pour répondre aux besoins des tout-petits. Chaque détail, de la température 
-                    de l’eau à la qualité des produits utilisés, est minutieusement contrôlé pour garantir 
-                    une expérience douce et apaisante. Vous êtes invités à participer pleinement à ces 
-                    moments uniques avec votre enfant, en toute confiance et tranquillité. Nous sommes 
-                    là pour vous accompagner et répondre à toutes vos questions, afin que vous puissiez 
-                    profiter de chaque instant en toute sérénité.
+                    Lors des séances d’hydrothérapie ou tout autre activité 
+                    en eau, veillez à garder un œil constant sur votre bébé. 
+                    Même dans un environnement sécurisé, la présence et l’attention 
+                    des parents restent essentielles pour assurer sa sécurité et son confort.            
                 </p>
-
-    </main>
-
+            </div>
 
 
+            <div class="prevention-container"> 
+                <h1>
+                    2. Respect des consignes d’hygiène
+                </h1>
+                <p>
+                    Pour garantir un environnement sain, assurez-vous que votre 
+                    bébé ait pris un bain préalable avant les activités au Baby 
+                    Spa. Vérifiez également qu’il ne présente aucun signe de maladie 
+                    contagieuse pour protéger les autres enfants.            
+                </p>
+            </div>
+            
+            
+            <div class="prevention-container"> 
+                <h1>
+                    3. Évitez les séances en cas de fatigue ou de maladie
+                </h1>
+                <p>
+                    Si votre bébé est malade, présente des signes de fatigue extrême 
+                    ou se remet d’une vaccination récente, il est conseillé de reporter 
+                    la séance. Ces moments doivent avant tout être agréables et bénéfiques 
+                    pour votre enfant.            
+                </p>
+            </div>
+            
+            
+            <div class="prevention-container"> 
+                <h1>
+                    4. Informez-vous sur les besoins de votre bébé
+                </h1>
+                <p>
+                    Avant d’essayer une nouvelle activité comme le massage ou les bains de lait, 
+                    renseignez-vous sur les besoins spécifiques de votre bébé. Certaines pratiques 
+                    pourraient ne pas convenir à tous les enfants en fonction de leur âge ou de leur santé.            
+                </p>
+            </div>
+            
+            
+            <div class="prevention-container"> 
+                <h1>
+                    5. Priorisez une hydratation et une alimentation adaptées
+                </h1>
+                <p>
+                    Assurez-vous que votre bébé est bien hydraté et qu’il a mangé suffisamment 
+                    avant une séance, mais évitez les repas trop copieux juste avant. Cela contribue 
+                    à son bien-être et prévient tout inconfort pendant les activités.            
+                </p>
+            </div>
 
 
-    <footer class="footer-container">
-        <ul id="bas-de-page">
-            <a href="./p1.html" class="menu-item"><li>Nos centres</li></a>
-            <a href="./p2.html" class="menu-item"><li>Contact</li></a>
-        </ul>
-    </footer>
+            <div class="reassure-paragraph">
+                <h2> 
+                    Votre sérénité, notre priorité
+                </h2>
+                    <p>
+                        Chez Trouve Ton Baby Spa, nous comprenons l’importance de la sécurité 
+                        et du bien-être de votre bébé. Toutes nos activités et soins sont encadrés 
+                        par des professionnels formés et expérimentés, dans un environnement spécialement 
+                        conçu pour répondre aux besoins des tout-petits. Chaque détail, de la température 
+                        de l’eau à la qualité des produits utilisés, est minutieusement contrôlé pour garantir 
+                        une expérience douce et apaisante. Vous êtes invités à participer pleinement à ces 
+                        moments uniques avec votre enfant, en toute confiance et tranquillité. Nous sommes 
+                        là pour vous accompagner et répondre à toutes vos questions, afin que vous puissiez 
+                        profiter de chaque instant en toute sérénité.
+                    </p>
 
-    
+        </main>
+        <footer class="footer-container">
+            <div id="bas-de-page">
+                <a href="https://www.instagram.com" ><img src="../images/logo-insta.png" alt="logo instagram" id="item-insta"></a>
+                <a href="https://x.com" ><img src="../images/logo-twitter.jpg" alt="logo instagram" id="item-twitter"></a>
+            </div>
+        </footer>
     </body>
 </html>

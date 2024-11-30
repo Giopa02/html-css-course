@@ -11,7 +11,79 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Raleway', sans-serif;
 }
+
+main {
+    flex: 100vh;
+}
+
+main section{
+    margin: 0;
+    display: flex; 
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Hauteur de la fenêtre */
+}
+
+p{
+    padding: 25px;
+}
+
+h2 {
+    height: 60px; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBF0E9;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 40px; 
+    margin-bottom: 10px; 
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+}
+
+
+
+/* ---------LOGO-----------*/
+
+.image-hover {
+    position: absolute;
+    left: 20px; ;
+    width: 150px; 
+    height: 150px;
+    margin-top: -10px; 
+    overflow: hidden;
+}
+
+.image-hover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.image-hover .hover-logo {
+    opacity: 0; /* L'image de survol est invisible par défaut */
+}
+
+.image-hover:hover .hover-logo {
+    opacity: 1; /* L'image de survol apparaît au passage de la souris */
+}
+
+.image-hover:hover .base-logo {
+    opacity: 0; /* L'image de base devient invisible au passage de la souris */
+}
+
+
+
+/* ---------MENU HEADER-----------*/
 
 #menu-container {
     background-color: #FBF0E9;
@@ -49,52 +121,77 @@ body {
 }
 
 
-main {
-    flex: 100vh;
+
+
+/* ---------FORM INFORMATIONS-----------*/
+
+
+.form-container {
+    background: white;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
 }
 
-p{
-    padding: 25px;
-}
 
-h2 {
-    height: 60px; /* la taille que la bande va prendre*/
-    background-size: cover;
-    background-position: center;
+form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #FBF0E9;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    margin-top: 40px; /* la distance entre la bande et ce qui se trouve au dessus */
-    margin-bottom: 10px; /* la distance entre la bande et ce qui se trouve en dessous */
-    font-family: 'Cabin', sans-serif;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, select, textarea, button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: hsla(300, 49%, 61%, 0.81);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: hsla(300, 33%, 45%, 0.81);
 }
 
 
-
-
-
-
-
-
-
+/* ---------FOOTER-----------*/
 
 .footer-container {
-    height: 70px;
+    display: flex;
+    justify-content: center;
+    height: 130px;
     background-color: #FBF0E9;
 }
 
 .footer-container #bas-de-page {
+    width: 70%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    
 }
 
-.footer-container #bas-de-page .menu-item {
-    text-decoration: none;
-    text-align: center;
-    font-size: 25px;
-    color: hsla(300, 49%, 61%, 0.81);
+.footer-container #bas-de-page #item-twitter {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+} 
+
+.footer-container #bas-de-page #item-insta {
+    width: 120px;
+    height: 120px;
 } 

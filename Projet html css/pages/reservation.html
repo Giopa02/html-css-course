@@ -2,14 +2,17 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Préventions</title>
+        <title>Trouve Ton Baby Spa | Réservations</title>
         <link rel="stylesheet" href="../pages_styles/style_reservation.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <style>
             body { background-color: #FBFBFB; }
 
             .banner {
             height: 300px;
-            background-image: url("../images/image_bebe_accueil.jpg");
+            background-image: url("../images/bebe_resa.jpg");
             background-size: cover;
             background-position: center;
             display: flex;
@@ -51,7 +54,10 @@
     <body>
         <nav id="menu-container">
             <a href="../pages/index.html" class="menu-item">
-                <img src="../images/logo.png" alt="logo Baby Spa" id="logo_babyspa">
+                <div class="image-hover">
+                    <img src="../images/logo.png" alt="logo de base" class="base-logo">
+                    <img src="../images/logo_hover.png" alt="logo au survol" class="hover-logo">
+                </div>
             </a>
             <ul id="menu">
                 <a href="./index.html" class="menu-item"><li>Accueil</li></a>
@@ -66,41 +72,63 @@
 
 
         <div class="banner">
-            <h1>Réservation</h1>
+            <h1>Réservations</h1>
         </div>
+        
+<!--MAIN-->
 
-    
+        <main>
 
+            <h2> Saisissez vos informations : </h2>
 
+            <section>
+                <div class="form-container">
+                    <form id="renseignement-form">
+                        <!-- Nom -->
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
 
-    <main>
+                        <!-- Prénom -->
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom" required>
 
-        <p> c'est la page de réservation </p>
-<!-- c'est le main. modifier le css.-->
+                        <!-- Email -->
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
 
-        <h1>Remplissez vos informations</h1>
-            <div id="form-container">
-                <!-- Le formulaire sera généré ici par JavaScript -->
-                
+                        <!-- Soins -->
+                        <label for="soins">Choisissez un soin :</label>
+                        <select id="soins" name="soins" required>
+                            <option value="">-- Sélectionnez un soin --</option>
+                            <option value="hydrotherapie">Hydrothérapie</option>
+                            <option value="massage">Massage</option>
+                            <option value="stimulation">Stimulation Sensorielle</option>
+                            <option value="bain">Bain de Lait aux Plantes</option>
+                            <option value="relaxation">Atelier Relaxation</option>
+                        </select>
+
+                        <!-- Commentaires -->
+                        <label for="commentaire">Commentaire :</label>
+                        <textarea id="commentaire" name="commentaire" rows="4"></textarea>
+
+                        <!-- Numéro de téléphone -->
+                        <label for="telephone">Téléphone :</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="06 12 34 56 78" required>
+
+                        <!-- Bouton valider -->
+                        <button type="button" id="valider-btn">Valider</button>
+                    </form>
+                </div>
+            </section>
+
+            <script src="../pages_styles/script_reservation.js"></script>
+
+        </main>
+        <footer class="footer-container">
+            <div id="bas-de-page">
+                <a href="https://www.instagram.com" ><img src="../images/logo-insta.png" alt="logo instagram" id="item-insta"></a>
+                <a href="https://x.com" ><img src="../images/logo-twitter.jpg" alt="logo instagram" id="item-twitter"></a>
             </div>
-            <div id="result"></div>
-
-            <script src="../pages_styles/script.js"></script>
-
-
-    </main>
-
-
-
-
-
-    <footer class="footer-container">
-        <ul id="bas-de-page">
-            <a href="./p1.html" class="menu-item"><li>Nos centres</li></a>
-            <a href="./p2.html" class="menu-item"><li>Contact</li></a>
-        </ul>
-    </footer>
-
-    
+        </footer>
     </body>
 </html>

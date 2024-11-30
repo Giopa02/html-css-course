@@ -2,8 +2,11 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Préventions</title>
-        <link rel="stylesheet" href="../pages_styles/style_prevention.css">
+        <title>Trouve Ton Baby Spa | Galerie</title>
+        <link rel="stylesheet" href="../pages_styles/style_galerie.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <style>
             body { background-color: #FBFBFB; }
 
@@ -49,9 +52,13 @@
         
 
     <body>
+        
         <nav id="menu-container">
             <a href="../pages/index.html" class="menu-item">
-                <img src="../images/logo.png" alt="logo Baby Spa" id="logo_babyspa">
+                <div class="image-hover">
+                    <img src="../images/logo.png" alt="logo de base" class="base-logo">
+                    <img src="../images/logo_hover.png" alt="logo au survol" class="hover-logo">
+                </div>
             </a>
             <ul id="menu">
                 <a href="./index.html" class="menu-item"><li>Accueil</li></a>
@@ -65,37 +72,45 @@
 
 <!--BANNIÈRRE-->
 
-
         <div class="banner">
             <h1>Galerie</h1>
             <p>Quelques images de nos petits bouts de chous</p>
         </div>
 
-    
+<!--MAIN-->
+
+        <main>
+
+            <div class="video-container">
+                <video class="custom-video" controls autoplay loop muted>
+                    <!--autoplay : La vidéo démarre automatiquement lorsqu’elle est chargée; loop : La vidéo se répète indéfiniment; 
+                    muted : La vidéo est silencieuse par défaut.-->
+                    <source src="../vidéo/video2babyspa.mp4" > 
+                    Votre navigateur ne supporte pas la balise vidéo.
+                </video>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery">
+                    <img src="../images/images_galerie/image_1.png.webp" alt="massage bébé">
+                    <img src="../images/images_galerie/image_2.jpg" alt="hydrothérapie bébé">
+                    <img src="../images/images_galerie/image_3.jpg.webp" alt="bébé couché">
+                    <img src="../images/images_galerie/image_4.jpg" alt="thalasso 2 bébés">
+                    <img src="../images/images_galerie/image_5.png.avif" alt="massage bébé">
+                    <img src="../images/images_galerie/image_6.jpg.webp" alt="bain aux plantes bébé">
+                    <img src="../images/images_galerie/image_7.jpg" alt="hydrothérapie bébé">
+                    <img src="../images/images_galerie/image_8.jpg" alt="hydrothérapie bébé">
+                    <img src="../images/images_galerie/image_9.JPG" alt="bain aux plantes bébé">
+                </div>
+            </div>
 
 
-
-    <main>
-
-        <p> c'est la page de galerie </p>
-<!-- c'est le main. modifier le css.-->
-
-
-
-
-    </main>
-
-
-
-
-
-    <footer class="footer-container">
-        <ul id="bas-de-page">
-            <a href="./p1.html" class="menu-item"><li>Nos centres</li></a>
-            <a href="./p2.html" class="menu-item"><li>Contact</li></a>
-        </ul>
-    </footer>
-
-    
+        </main>
+        <footer class="footer-container">
+            <div id="bas-de-page">
+                <a href="https://www.instagram.com" ><img src="../images/logo-insta.png" alt="logo instagram" id="item-insta"></a>
+                <a href="https://x.com" ><img src="../images/logo-twitter.jpg" alt="logo instagram" id="item-twitter"></a>
+            </div>
+        </footer>
     </body>
 </html>
